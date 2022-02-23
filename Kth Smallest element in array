@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		PriorityQueue<Integer> minheap=new PriorityQueue<>();
+		
+		int[] arr={4,5,2,1,9,78};
+		int k=3;
+		for(int i=0;i<arr.length;i++){
+		    minheap.add(arr[i]);
+		}
+		int l=k-1;
+		while(l>0){
+		    minheap.poll();
+		    l--;
+		}
+		System.out.println(minheap.peek());
+	}
+}
