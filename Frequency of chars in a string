@@ -2,7 +2,6 @@ import java.util.*;
 public class Main
 {
 	public static void main(String[] args) {
-		//System.out.println("Hello World");
 		String str="geekforgeeks";
 		Map<Character,Integer> m1=new HashMap<Character,Integer>();
 		for(int i=0;i<str.length();i++){
