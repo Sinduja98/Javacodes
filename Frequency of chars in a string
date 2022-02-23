@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+		String str="geekforgeeks";
+		Map<Character,Integer> m1=new HashMap<Character,Integer>();
+		for(int i=0;i<str.length();i++){
+		    if(m1.containsKey(str.charAt(i))){
+		        m1.put(str.charAt(i),m1.get(str.charAt(i))+1);
+		    }
+		    else
+		    m1.put(str.charAt(i),1);
+		}
+		for(Map.Entry<Character,Integer> i:m1.entrySet()){
+		    System.out.print(i.getKey());
+		    System.out.print(i.getValue()+" ");
+		    
+		}
+		
+	}
+}
