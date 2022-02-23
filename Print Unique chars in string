@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+
+		String str="geekk";
+		Map<Character,Integer> m1=new HashMap<Character,Integer>();
+		for(int i=0;i<str.length();i++){
+		    if(m1.containsKey(str.charAt(i))){
+		        m1.put(str.charAt(i),m1.get(str.charAt(i))+1);
+		    }
+		    else
+		    m1.put(str.charAt(i),1);
+		}
+		for(Map.Entry<Character,Integer> i:m1.entrySet()){
+		    if(i.getValue()==1){
+		        System.out.println("unique ele is "+i.getKey());
+		    }
+		    else
+		    continue;
+		}
+		
+		
+	}
+}
